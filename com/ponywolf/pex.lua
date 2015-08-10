@@ -30,13 +30,13 @@ local function strip(s)
     if not ni then break end
     if c ~= "/" then
       if label ~= "particleEmitterConfig" and label ~= "texture" then
-        print("Found:", label)
+        --print("Found:", label)
         local args = {} 
         local k = 1
         for w in string.gmatch(xarg, "[%w%.%-]+") do args[k] = w; k = k + 1; end
         for k = 1, #args, 2 do
           sk, sv = args[k], args[k+1]
-          print(sk,"=",sv)
+          --print(sk,"=",sv)
           if sk == "value" then
             t[label] = tonumber(sv)
           elseif sk == "x" or sk == "y" then
