@@ -1,4 +1,4 @@
-pex4corona
+ponypex
 ==========
 
 PEX file import (Particle Designer) for Corona's new particle system
